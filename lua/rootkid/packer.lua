@@ -12,7 +12,7 @@ return require('packer').startup(function(use)
         requires = {
             'nvim-tree/nvim-web-devicons', -- optional, for file icons
         },
-        tag = 'nightly' -- optional, updated every week. (see issue #1193)
+        tag = 'nightly' -- optional, updated every week. (see issue #1193g
     }
 
     -- Nice Dashboard
@@ -51,6 +51,12 @@ return require('packer').startup(function(use)
             {'L3MON4D3/LuaSnip'},
             {'rafamadriz/friendly-snippets'},
         }
+    }
+    -- Telescope File Finder 
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.0',
+        -- or                            , branch = '0.1.x',
+        requires = { {'nvim-lua/plenary.nvim'} }
     }
 
 end)
