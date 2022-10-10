@@ -18,8 +18,9 @@ return require('packer').startup(function(use)
     -- Nice Dashboard
     use 'glepnir/dashboard-nvim'
 
-    -- You can alias plugin names
-    use {'dracula/vim', as = 'dracula'}
+    -- Colorschemes
+    --use {'dracula/vim', as = 'dracula'}
+    use {'folke/tokyonight.nvim'}
 
     -- Statusline --
     use({
