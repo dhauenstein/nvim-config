@@ -14,7 +14,7 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
 -- Display 
-vim.opt.wrap = false
+vim.opt.wrap = true
 vim.wo.colorcolumn = '88'
 vim.o.cursorline = true
 
