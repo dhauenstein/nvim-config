@@ -20,7 +20,7 @@ end
 vim.cmd [[
 augroup packer_user_config
 autocmd!
-autocmd BufWritePost plugins.lua source <afile> | PackerSync
+autocmd BufWritePost plugins-setup.lua source <afile> | PackerSync
 augroup end
 ]]
 
@@ -106,8 +106,8 @@ return require('packer').startup(function(use)
     use "terrortylor/nvim-comment"
     -- Terminal 
     use {"akinsho/toggleterm.nvim", tag = '*'}
-    -- use "github/copilot.vim"
-
+    -- Gitsigns 
+    use "lewis6991/gitsigns.nvim"
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then

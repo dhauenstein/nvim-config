@@ -1,4 +1,7 @@
-local db = require('dashboard')
+local setup, db = pcall(require, "dashboard")
+if not setup then
+  return
+end
 
 local header = {
  [[]],
