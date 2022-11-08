@@ -17,6 +17,9 @@ map('n', '<C-p>', [[:NvimTreeToggle<CR>]], {})
 -- LSP 
 map('n','<leader>af','<cmd>lua vim.lsp.buf.code_action()<CR>',{})
 
+-- Split Windows 
+map("n","<leader>_","<C-w>s",opts)
+map("n","<leader>|","<C-w>v",opts)
 -- Resizing Windows 
 map("n", "<M-Up>", ":resize +2<CR>", opts)
 map("n", "<M-Down>", ":resize -2<CR>", opts)
