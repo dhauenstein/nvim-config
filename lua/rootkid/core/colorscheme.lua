@@ -1,5 +1,5 @@
-local status,_ = pcall(vim.cmd, "colorscheme tokyonight-night")
+local status,_ = pcall(vim.cmd, "colorscheme rose-pine")
 if not status then 
-    print("Colorscheme tokyonight-night missing!")
+    print("Colorscheme rose-pine missing!")
     return 
 end
