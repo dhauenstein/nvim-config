@@ -23,7 +23,6 @@ vim.o.cursorline = true
 
 -- Syntax
 vim.opt.syntax = "on"
-vim.cmd[[colorscheme tokyonight-night]]
 
 
 -- appearance 

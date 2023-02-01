@@ -57,8 +57,13 @@ return require('packer').startup(function(use)
 
     -- Colorschemes
     --use {'dracula/vim', as = 'dracula'}
-    use {'folke/tokyonight.nvim'}
-
+    use({
+    'rose-pine/neovim',
+    as = 'rose-pine',
+    config = function()
+      vim.cmd('colorscheme rose-pine')
+    end
+  })
     -- Statusline --
     use({
         'nvim-lualine/lualine.nvim',
