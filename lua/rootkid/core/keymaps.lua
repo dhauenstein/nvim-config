@@ -2,7 +2,7 @@ local opts = { noremap = true, silent = true }
 local term_opts = { silent = true }
 local map = vim.api.nvim_set_keymap
 
-vim.g.mapleader = ','
+vim.g.mapleader = ' '
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",

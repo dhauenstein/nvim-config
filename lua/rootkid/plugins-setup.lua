@@ -128,6 +128,11 @@ return require('packer').startup(function(use)
             }
         end
     }
+
+
+    use 'ray-x/go.nvim'
+    use 'ray-x/guihua.lua'
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then
