@@ -30,3 +30,5 @@ map("n", "<M-Right>", ":vertical resize +2<CR>", opts)
 -- Stay in indent mode
 map("v", "<", "<gv", opts)
 map("v", ">", ">gv", opts)
+-- Format file 
+map("n", "<leader>F", "<cmd>lua vim.lsp.buf.formatting()<CR>",opts)

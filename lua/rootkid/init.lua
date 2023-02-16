@@ -6,6 +6,7 @@ require("rootkid.core.keymaps")
 require("rootkid.core.colorscheme")
 -- Plugin Configs 
 require("rootkid.plugins.lualine")
+require("rootkid.plugins.null-ls")
 require("rootkid.plugins.lsp-zero")
 require("rootkid.plugins.gitsigns")
 require("rootkid.plugins.commenter")
