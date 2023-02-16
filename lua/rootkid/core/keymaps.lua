@@ -25,10 +25,16 @@ map("n", "<M-Up>", ":resize +2<CR>", opts)
 map("n", "<M-Down>", ":resize -2<CR>", opts)
 map("n", "<M-Left>", ":vertical resize -2<CR>", opts)
 map("n", "<M-Right>", ":vertical resize +2<CR>", opts)
-
+-- Format file 
+map("n", "<leader>F", "<cmd>lua vim.lsp.buf.formatting()<CR>",opts)
+-- Trouble 
+map("n", "<leader>xx", "<cmd>TroubleToggle<cr>",opts)
+map("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>",opts)
+map("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>",opts)
+map("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>",opts)
+map("n", "<leader>xl", "<cmd>TroubleToggle loclist<cr>",opts)
 -- Visual --
 -- Stay in indent mode
 map("v", "<", "<gv", opts)
 map("v", ">", ">gv", opts)
--- Format file 
-map("n", "<leader>F", "<cmd>lua vim.lsp.buf.formatting()<CR>",opts)
+
