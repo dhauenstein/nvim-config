@@ -133,6 +133,9 @@ return require('packer').startup(function(use)
     use 'ray-x/go.nvim'
     use 'ray-x/guihua.lua'
 
+    -- Rust 
+    use 'simrat39/rust-tools.nvim'
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then

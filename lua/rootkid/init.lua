@@ -14,6 +14,7 @@ require("rootkid.plugins.commenter")
 require("rootkid.plugins.telescope")
 require("rootkid.plugins.dashboard")
 require("rootkid.plugins.nvim-tree")
+require("rootkid.plugins.rust-tools")
 require("rootkid.plugins.toggleterm")
 require("rootkid.plugins.treesitter")
 
